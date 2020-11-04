@@ -42,6 +42,9 @@ const App = () => {
      // general URL to get random beers
     const url = `https://api.punkapi.com/v2/beers?per_page=50${searchTerm}${hasAlcoholFitler}${hasClassicFilter}`;
 
+    console.log("HERES ALL THE DATA THAT MANUELA IS FILTERING BY")
+    console.log(url);
+
     return fetch(url)
       .then((res) => res.json())
       .then((res) => {
@@ -81,9 +84,9 @@ const App = () => {
         filterBeers={filterBeers}
         setName={setName}
         setAbv={setAbv}
+        abv={abv}
         setIsClassic={setIsClassic}
         isClassic={isClassic}
-        abv={abv}
       />
     </div>
   );
