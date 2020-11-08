@@ -5,7 +5,7 @@ import Dashboard from '../Dashboard';
 import SignIn from '../../components/SignIn';
 
 const Routes = (props) => {
-    const {signIn, signOut, user, filterBeers, beers, setName, setIsClassic, setAbv, isClassic, abv } = props;
+    const {signIn, signOut, user, filterBeers, beers, setName, setIsClassic, setAbv, isClassic, abv, name } = props;
 
     return (
 
@@ -20,6 +20,7 @@ const Routes = (props) => {
                 beers={beers}
                 isClassic={isClassic}
                 abv={abv}
+                name={name}
             />
             <SignIn path="/login" 
                 signIn={signIn} 

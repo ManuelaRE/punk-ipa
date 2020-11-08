@@ -1,17 +1,18 @@
 import React from "react";
+import styles from './Filter.module.scss';
 
 
 const Filter = (props) => {
 
-  const {filterBeers, setAbv, setIsClassic, isClassic, abv } = props;
+  const { filterBeers, setAbv, setIsClassic, isClassic, abv } = props;
 
   return (
-    <form>
+    <form className={styles.form}>
+      <input type="checkbox" name="abv" value="abv_gt" onChange={() => { filterBeers(!abv); setAbv(!abv) }} />
       <label htmlFor="abv"> Alcohol content (>6.0%) </label>
-      <input type="checkbox" name="abv" value="abv_gt"  onChange={() => {setAbv(!abv); filterBeers()}} />
       <br />
-      <label htmlFor="classic"> Classic Range </label>
-      <input type="checkbox" name="classic" value="first_brewed" onChange={() => {setIsClassic(!isClassic); filterBeers()}} />
+      <input type="checkbox" name="classic" value="first_brewed" onChange={() => { filterBeers(!isClassic); setIsClassic(!isClassic) }} />
+      <label htmlFor="classic"> Classic Range (brewed before 2011) </label>
       <br />
     </form>
   );

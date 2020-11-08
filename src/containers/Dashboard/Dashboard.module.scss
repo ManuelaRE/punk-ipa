@@ -1,0 +1,14 @@
+.dashboard {
+    display: grid;
+    grid-template-areas: "nav nav"
+        "sideBar main";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 100px auto;
+    height: 100vh;
+    margin: 0;
+    background: rgb(10,70,75);
+    background: linear-gradient(97deg, rgba(10,70,75,1) 23%, rgba(215,182,47,1) 87%, rgba(255,202,159,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}

@@ -1,21 +1,24 @@
 import React from "react";
+import styles from './SearchBar.module.scss';
+
 
 const SearchBar = (props) => {
-  const { setName, filterBeers } = props;
+  const { setName, filterBeers, name } = props;
 
   return (
-    <div>
+    <section className={styles.searchBar}>
+      <h2>Search your beer by name</h2>
       <input
         type="text"
-        placeholder="Search"
+        placeholder="I'm feeling thirsty..."
         onInput={(e) => {
           setName(e.target.value);
-          filterBeers()
+          filterBeers(name);
         }
         }
 
       />
-    </div>
+    </section>
   );
 };
 

@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.homePage {
+    background-image: url('../../assets/images/pexels-elevate-1269025.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+        font-family: 'Big Shoulders Stencil Text', cursive;
+        font-size: 60px;
+    }
+
+    button {
+        color: #FFFFFF;
+        background: #F32C52;
+        margin: 40px;
+        padding: 12px 12px;
+        width: 150px;
+        font-size: 20px;
+        font-family: 'Big Shoulders Stencil Text', cursive;
+        cursor: pointer;
+        user-select: none;
+        transition: all 150ms linear;
+        text-align: center;
+        white-space: nowrap;
+        text-decoration: none !important;
+        text-transform: none;
+        border: 0 none;
+        border-radius: 36px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        box-shadow: 2px 5px 10px var(--color-smoke);
+
+        &:hover {
+            transition: all 150ms linear;
+            opacity: .85;
+        }
+
+        &:active {
+            transition: all 150ms linear;
+            opacity: .75;
+        }
+
+        &:focus {
+            outline: 1px dotted #959595;
+            outline-offset: -4px;
+        }
+    }
+
+}

@@ -1,13 +1,14 @@
 import React from 'react';
+import styles from './SignIn.module.scss';
 
 const SignIn = (props) => {
 
     const {signIn} = props;
 
     return (
-        <div>
-            <h1>Friday beer challenge</h1>
-            <h2>Sign in to find your favourites</h2>
+        <div className={styles.homePage}>
+            <h1>Punk API</h1>
+            <h1>Sign in to find your favourites beer!</h1>
             <button onClick={signIn}>Sign In</button>
         </div>
     )
