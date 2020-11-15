@@ -1,11 +1,15 @@
 .form {
     font-family: 'Big Shoulders Stencil Text', cursive;
-    color: #ffffff;
+    color: #E2C7CA;
     opacity: .8;
     line-height: 2;
 
     label {
         padding-left: 2%;
+    }
+
+    input, label {
+        cursor: pointer;
     }
 
 }

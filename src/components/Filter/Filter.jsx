@@ -8,10 +8,10 @@ const Filter = (props) => {
 
   return (
     <form className={styles.form}>
-      <input type="checkbox" name="abv" value="abv_gt" onChange={() => { filterBeers(!abv); setAbv(!abv) }} />
+      <input type="checkbox" id="abv" value="abv_gt" onChange={() => { filterBeers(!abv); setAbv(!abv) }} />
       <label htmlFor="abv"> Alcohol content (>6.0%) </label>
       <br />
-      <input type="checkbox" name="classic" value="first_brewed" onChange={() => { filterBeers(!isClassic); setIsClassic(!isClassic) }} />
+      <input type="checkbox" id="classic" value="first_brewed" onChange={() => { filterBeers(!isClassic); setIsClassic(!isClassic) }} />
       <label htmlFor="classic"> Classic Range (brewed before 2011) </label>
       <br />
     </form>

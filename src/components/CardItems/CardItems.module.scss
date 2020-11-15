@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 300px;
-    border: 2px solid black;
+    border: 2px solid #E2C7CA;
     margin: 1%;
     padding: 1%;
     // color: white;
@@ -14,7 +14,7 @@
     }
 
     .tagline {
-        color: #002A32;
+        color: #E2C7CA;
         font-style: italic;
         text-align: center;
         padding-bottom: 5%;
@@ -27,7 +27,8 @@
 
     p {
         text-align: left;
-        color: #002A32;
+        color: #E2C7CA;
+        opacity: 0.6;
         font-size: 18px;
         font-family: 'Big Shoulders Stencil Text', cursive;
         line-height: 1.5;
